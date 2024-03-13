@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>skills-Animation</title>
+    <style>
+        body{
+            background: rgb(33, 33, 154);
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 700px;
+            background-color: white;
+            height: 450px;
+            border-radius: 10px;
+        }
+        .skill-box{
+            padding: 25px;
+            display: flex;
+            flex-direction:column;
+        }
+        .title{
+            font-family: arial;
+            font-size: 14px;
+            font-weight:bold;
+        }
+
+        .skill-bar{
+            margin-top: 8px;
+            height: 9px;
+            background-color: gray;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .tooltip{
+            top: -30px;
+            right: 0px;
+            background-color: blue;
+            width: 24px;
+            padding: 4px;
+            border-radius: 2px;
+            color: white;
+            font-size: 13px;
+            position: absolute;
+        }
+
+        .html, .css, .js, .nodeJs{
+            position: absolute;
+            transition:all 0.5s;
+            height: 9px;
+            animation-name: progress;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            background-color: blue;
+            opacity: 0;
+
+        }
+        .html{
+            width: 90%;
+        }
+        .css{
+            width: 70%;
+        }
+        .js{
+            width: 50%;
+        }
+        .nodeJs{
+            width: 30%;
+        }
+
+        @keyframes progress{
+            0%{
+                width: 0;
+                opacity: 0;        
+            }
+            100%{
+                opacity: 1;  
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="skill-box">
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+                    <span class="html">
+                <span class="tooltip">90%</span>
+                    </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title">CSS</span>
+            <div class="skill-bar">
+                    <span class="css">
+                <span class="tooltip">70%</span>
+                    </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+                    <span class="js">
+                <span class="tooltip">50%</span>
+                    </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">NodeJS</span>
+            <div class="skill-bar">
+                    <span class="nodeJs">
+                <span class="tooltip">30%</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

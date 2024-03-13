@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        html,body{
+            display: grid;
+            background-color: black;
+            height: 100vh;
+            place-items: center;
+        }
+        .main_div{
+            width: 365px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        .main_div .title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .main_div .social_icons{
+           margin-top: 10px;
+           display: flex;
+           justify-content: center;
+        } 
+        .social_icons img{
+            width: 50px;
+            margin-left: 10px;
+            transition: all 0.15s;
+        }
+        .social_icons img:hover{
+            opacity: 0.6;
+        }
+        .input_box{
+            margin-bottom: 8px;
+        }
+        .box{
+            padding: 7px;
+            width: 300px;
+        }
+        .option_div{
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .remember{
+            font-size: 13px;
+            margin-right: 45px;
+        }
+        .forget_div{
+            font-size: 13px;
+            margin-left: 45px;   
+        }
+        .forgot{
+            text-decoration: none;
+            color: rgb(212, 18, 233);
+            transition: all 0.15s;
+        }
+        .forgot:hover{
+            text-decoration: underline;
+        }
+        .button
+        {
+            height: 40px;
+            width: 300px;
+            text-align: center;
+            background-color: rgb(212, 18, 233);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            transition: all 0.15s;
+        }
+        .button:hover {
+            opacity: 0.7;
+        }
+        .sign_up{
+            margin-top: 22px;
+            text-align: center;
+            font-size: 13px; 
+        }
+        .signup{
+            text-decoration: none;
+            color: rgb(212, 18, 233);
+            transition: all 0.15s;
+        }
+        .signup:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="title">Login Form</div>
+        <div class="social_icons">
+            <a href="https://facebook.com"><img src="images/Facebook_Logo_2023.png" alt="facebook"></a>
+            <a href="https://twitter.com"><img src="images/45269542660b7a985dd967451c31b2d0.jpg" alt="twitter"></a>
+        </div>
+        <div>
+            <form action="#">
+                <div class="input_box">
+                    <input class="box" type="text" placeholder="Email or Phone" required>    
+                </div>
+                <div class="input_box">
+                    <input class="box" type="password" placeholder="Password" required>        
+                </div>
+
+                <div class="option_div">
+                    <div class="check_box">
+                        <input type="checkbox">
+                        <span class="remember">Remember me</span>
+                    </div>
+                    <div class="forget_div">
+                        <a class="forgot" href="#">Forgot password?</a>
+                    </div>
+                </div>
+                
+                <div class="input_box-button">
+                    <input class="button" type="submit" value="Login">
+                </div>
+                <div class="sign_up">
+                    Not a member? <a class="signup" href="#">Signup now</a>
+                </div>
+            </form>
+
+        </div>
+
+</body>
+
+</html>
